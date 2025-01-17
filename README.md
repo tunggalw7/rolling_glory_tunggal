@@ -70,6 +70,27 @@ To deploy this project to Netlify:
 
 After these steps, Netlify will build and deploy your project automatically.
 
+### Adding PWA to React
+
+1. Enable Service Worker
+
+- Ensure serviceWorkerRegistration.register() is called in src/index.js:
+- import \* as serviceWorkerRegistration from './serviceWorkerRegistration';
+- serviceWorkerRegistration.register();
+
+2. Add Manifest File
+
+- Update public/manifest.json
+
+3. Add PWA Install Prompt (Optional)
+4. Build and Deploy
+
+- Run npm run build and deploy to an HTTPS server.
+
+5. Test with Lighthouse
+
+- Use Chrome DevTools Lighthouse to verify your app meets PWA criteria.
+
 ## Project Structure
 
 ```
