@@ -1,0 +1,30 @@
+.wrapper-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+.button-view {
+  cursor: pointer;
+  position: absolute;
+  bottom: 2rem;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-view:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-box {
+    margin: 1rem 0;
+  }
+
+  .button-view {
+    bottom: 1rem;
+  }
+}
